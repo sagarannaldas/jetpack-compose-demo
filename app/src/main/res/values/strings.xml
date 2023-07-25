@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Jetpack Compose Demo</string>
+    <string name="dummy_text">I\'m sagar, wassup with you guys.\n Checking with Jetpack Compose</string>
 </resources>
