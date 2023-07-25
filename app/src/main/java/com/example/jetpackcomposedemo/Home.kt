@@ -59,7 +59,7 @@ fun Home(navController: NavController? = null) {
         LazyColumn {
             var i = 0
             items((0..5).toList()) {
-                TaskCard("Detail Item ${i++}")
+                TaskCard("Detail Item ${i++}",navController)
             }
         }
     }
