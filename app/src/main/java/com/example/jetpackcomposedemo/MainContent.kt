@@ -27,6 +27,7 @@ fun MainContent() {
                 {
                     type = NavType.StringType
                     defaultValue = "item not available"
+                    nullable = true
                 })
             ) {
 //                task/{item}/{item1}/{item2}
