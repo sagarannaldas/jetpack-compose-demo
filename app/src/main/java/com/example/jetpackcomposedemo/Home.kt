@@ -59,7 +59,7 @@ fun Home(navController: NavController? = null) {
         LazyColumn {
             var i = 0
             items((0..5).toList()) {
-                TaskCard("Detail Item ${i++}",navController)
+                TaskCard("Detail Item ${i++}", navController)
             }
         }
     }
@@ -74,7 +74,7 @@ fun TaskCard(task: String, navController: NavController? = null) {
             .wrapContentHeight()
             .padding(top = 8.dp)
             .clickable {
-                navController?.navigate("task/$task")
+                navController?.navigate("task?item=$task")
             }) {
 
         Row(

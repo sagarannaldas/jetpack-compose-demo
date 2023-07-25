@@ -21,9 +21,14 @@ fun MainContent() {
             composable("home") {
                 Home(navController)
             }
-            composable("task/{item}", arguments = listOf(navArgument("item") {
-                type = NavType.StringType
-            })) {
+            composable(
+                "task?item={item}",
+                arguments = listOf(navArgument("item")
+                {
+                    type = NavType.StringType
+                    defaultValue = "item not available"
+                })
+            ) {
 //                task/{item}/{item1}/{item2}
                 val item = it.arguments?.getString("item")
                 if (item != null) {
